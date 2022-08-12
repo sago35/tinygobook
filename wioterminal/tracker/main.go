@@ -1,3 +1,17 @@
+// 8-1 Wio Terminal Tracker
+//
+// Wio Terminal の傾き情報を出力します
+// Processing と組み合わせて傾き情報をパソコンの画面に同期します
+//
+// - Wio Terminal からパソコンに角度情報を送る
+// - パソコンの Processing で書く動に対応して Gopher を傾ける
+//
+// tinygo flash --target wioterminal --size short ./wioterminal/tracker
+//
+// 書き込みが終わったらパソコンで Processing を立ち上げ
+// メニュー＞ファイル＞開く から ./sketch_01/sketch_01.pde を読み込ませてください
+//
+
 package main
 
 import (

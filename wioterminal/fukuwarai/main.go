@@ -1,3 +1,21 @@
+// 8-2 Gopher福笑い
+//
+// Wio Terminal の画面に Gopher を表示して各パーツを移動することが出来ます
+//
+// - LCD に Gopher を表示する
+// - 十字キーにより操作対象を移動する
+// - BUTTON_3 および十字キー押し込みにより操作対象を切り替える
+// - BUTTON_2 により Gopher の体の色を変える
+// - BUTTON_1 により QR コード画面へ切り替える
+//
+// ビルドする時は速度面を改善するために -opt 2 オプションを追加してください
+//
+// tinygo flash --target wioterminal --size short --opt 2 ./wioterminal/fukuwarai
+//
+// 色々な見た目の Gopher を作って、写真を Tweet してください
+// QR コード画面の QR コードを読ませると Twitter を開くことが出来ます
+// ハッシュタグは #tinygobook および #tinygo です
+
 package main
 
 import (
