@@ -6,13 +6,42 @@ import (
 	"image/png"
 	"log"
 	"os"
-	"strings"
 )
 
 func main() {
-	for _, file := range os.Args[1:] {
-		fmt.Printf("%s\n", file)
-		r, err := os.Open(file)
+	files := []struct{ src, dst string }{
+		{
+			src: "./wioterminal/fukuwarai/png/01_body.png",
+			dst: "./wioterminal/fukuwarai/img/01_body.bin",
+		},
+		{
+			src: "./wioterminal/fukuwarai/png/02_eye_left_1.png",
+			dst: "./wioterminal/fukuwarai/img/02_eye_left_1.bin",
+		},
+		{
+			src: "./wioterminal/fukuwarai/png/02_eye_left_2.png",
+			dst: "./wioterminal/fukuwarai/img/02_eye_left_2.bin",
+		},
+		{
+			src: "./wioterminal/fukuwarai/png/02_eye_right_1.png",
+			dst: "./wioterminal/fukuwarai/img/02_eye_right_1.bin",
+		},
+		{
+			src: "./wioterminal/fukuwarai/png/02_eye_right_2.png",
+			dst: "./wioterminal/fukuwarai/img/02_eye_right_2.bin",
+		},
+		{
+			src: "./wioterminal/fukuwarai/png/03_mouse.png",
+			dst: "./wioterminal/fukuwarai/img/03_mouse.bin",
+		},
+		{
+			src: "./wioterminal/fukuwarai/png/qr_and_license.png",
+			dst: "./wioterminal/fukuwarai/img/qr_and_license.bin",
+		},
+	}
+	for _, file := range files {
+		fmt.Printf("%s\n", file.src)
+		r, err := os.Open(file.src)
 		if err != nil {
 			log.Fatal(err)
 		}
@@ -23,8 +52,7 @@ func main() {
 			log.Fatal(err)
 		}
 
-		to := strings.Replace(file, ".png", ".bin", -1)
-		w, err := os.Create(to)
+		w, err := os.Create(file.dst)
 		if err != nil {
 			log.Fatal(err)
 		}
