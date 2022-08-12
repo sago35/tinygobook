@@ -7,7 +7,7 @@
 
 Twitter の hashtag は `#tinygo` と `#tinygobook` を使ってください。  
 
-* Twitter : [tinygo OR #tinygo OR @tinygolang OR #tinygobook](https://twitter.com/search?q=tinygo%20OR%20%23tinygo%20OR%20%40tinygolang%20OR%20%23tinygobook&src=typed_query&f=top)
+* Twitter : [tinygo OR #tinygo OR @tinygolang OR #tinygobook](https://twitter.com/search?q=tinygo%20OR%20%23tinygo%20OR%20%40tinygolang%20OR%20%23tinygobook&src=typed_query&f=live)
 
 ## よくある質問と回答
 
@@ -18,7 +18,7 @@ Twitter の hashtag は `#tinygo` と `#tinygobook` を使ってください。
 デモアプリケーションはこちら。  
 Wio Terminal + TinyGo 0.25 で動作を確認しています。  
 
-### Wioterminal Tracker
+### Wio Terminal Tracker
 
 * [./wioterminal/tracker/](./wioterminal/tracker/)
 
@@ -30,7 +30,7 @@ $ tinygo flash --target wioterminal --size short ./wioterminal/tracker/
 
 注意) `-opt z` 以外でビルドすると、I2Cデータの受け取りに失敗します  
 
-### Wioterminal 福笑い
+### Gopher福笑い
 
 * [./wioterminal/fukuwarai](./wioterminal/fukuwarai/)
 
