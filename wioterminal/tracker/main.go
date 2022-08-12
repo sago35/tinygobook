@@ -37,12 +37,10 @@ func main() {
 	for {
 		x, y, z, _ := accel.ReadAcceleration()
 
-		// それぞれの軸に対するθを求める
-		ax := float64(x) / 1000000
-		ay := float64(y) / 1000000
-		az := float64(z) / 1000000
-		a1 := math.Atan2(ax, az)
-		a2 := math.Atan2(ay, az)
+		// TODO: x, y, z を使って角θを求める
+		a1 := 0
+		a2 := 0
+
 		fmt.Printf("%f %f\r\n", a1, a2)
 
 		time.Sleep(time.Millisecond * 100)

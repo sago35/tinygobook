@@ -106,17 +106,13 @@ func redraw(objects []Obj) {
 	for _, o := range objects {
 		o.Draw()
 	}
-	for i := range fb {
-		if i%2 == 0 {
-			if fb[i] == 0xBD { // 0xBDF7を見つけて書き換える
-				fb[i+0] = uint8(colors[colorsIndex][0] >> 8)
-				fb[i+1] = uint8(colors[colorsIndex][0])
-			} else if fb[i] == 0xDE { // 0xDEFBを見つけて書き換える
-				fb[i+0] = uint8(colors[colorsIndex][1] >> 8)
-				fb[i+1] = uint8(colors[colorsIndex][1])
-			}
-		}
-	}
+	// TODO: 色の変更を実装する
+	// hint: fb[:] に書き込むと、この後の DrawRGBBitmap8() で画面に表示される
+	// hint: fb[:] のうち []byte{0xBD, 0xF7} という並びを
+	// hint: colors[colorsIndex][0] の値で書き換える
+	// hint: 同様に []byte{0xDE, 0xFB} という並びを
+	// hint: colors[colorsIndex][1] の値で書き換える
+
 	display.DrawRGBBitmap8(0, 0, fb[:], 320, 240)
 }
 
@@ -184,8 +180,8 @@ const (
 var static embed.FS
 
 func license() {
-	display.FillScreen(color.RGBA{0xFF, 0xFF, 0xFF, 0xFF})
-	r, _ := static.Open("img/qr_and_license.bin")
-	r.Read(fb[:])
-	display.DrawRGBBitmap8(0, 0, fb[:], 320, 240)
+	// QR コードなどを含む画面を表示する
+	// qr_and_license.bin は 320 x 240 ピクセルすべての領域の画像データ
+	// TODO: img/qr_and_license.bin から読み込んだデータを表示する
+	// hint: embed.FS にて埋め込まれているので redraw() を参考にして処理する
 }
