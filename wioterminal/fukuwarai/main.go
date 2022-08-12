@@ -108,10 +108,10 @@ func redraw(objects []Obj) {
 	}
 	for i := range fb {
 		if i%2 == 0 {
-			if fb[i] == 0xBD { // BDF7
+			if fb[i] == 0xBD { // 0xBDF7を見つけて書き換える
 				fb[i+0] = uint8(colors[colorsIndex][0] >> 8)
 				fb[i+1] = uint8(colors[colorsIndex][0])
-			} else if fb[i] == 0xDE { // DEFB
+			} else if fb[i] == 0xDE { // 0xDEFBを見つけて書き換える
 				fb[i+0] = uint8(colors[colorsIndex][1] >> 8)
 				fb[i+1] = uint8(colors[colorsIndex][1])
 			}

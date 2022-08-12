@@ -19,9 +19,9 @@ func init() {
 	display = initdisplay.InitDisplay()
 	display.FillScreen(color.RGBA{0xFF, 0xFF, 0xFF, 0xFF})
 
-	machine.WIO_KEY_A.Configure(machine.PinConfig{Mode: machine.PinInputPullup})
-	machine.WIO_KEY_B.Configure(machine.PinConfig{Mode: machine.PinInputPullup})
-	machine.WIO_KEY_C.Configure(machine.PinConfig{Mode: machine.PinInputPullup})
+	machine.BUTTON_1.Configure(machine.PinConfig{Mode: machine.PinInputPullup})
+	machine.BUTTON_2.Configure(machine.PinConfig{Mode: machine.PinInputPullup})
+	machine.BUTTON_3.Configure(machine.PinConfig{Mode: machine.PinInputPullup})
 
 	machine.WIO_5S_UP.Configure(machine.PinConfig{Mode: machine.PinInputPullup})
 	machine.WIO_5S_LEFT.Configure(machine.PinConfig{Mode: machine.PinInputPullup})
@@ -31,11 +31,11 @@ func init() {
 }
 
 func GetPressedKey() uint16 {
-	if !machine.WIO_KEY_A.Get() {
+	if !machine.BUTTON_1.Get() {
 		return KeyBackspace
-	} else if !machine.WIO_KEY_B.Get() {
-		return ' '
-	} else if !machine.WIO_KEY_C.Get() {
+	} else if !machine.BUTTON_2.Get() {
+		return KeySpace
+	} else if !machine.BUTTON_3.Get() {
 		return KeyReturn
 	} else if !machine.WIO_5S_UP.Get() {
 		return KeyUp
