@@ -9,9 +9,8 @@ import (
 	"tinygo.org/x/drivers/lis3dh"
 )
 
-var i2c = machine.I2C0
-
 func main() {
+	i2c := machine.I2C0
 	i2c.Configure(machine.I2CConfig{SCL: machine.SCL0_PIN, SDA: machine.SDA0_PIN})
 
 	accel := lis3dh.New(i2c)
