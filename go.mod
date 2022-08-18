@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/sago35/tinydisplay v0.0.0-20220715044857-e219b1185073
-	tinygo.org/x/drivers v0.21.0
+	tinygo.org/x/drivers v0.22.0
 )
 
 require (
