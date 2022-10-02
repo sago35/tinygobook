@@ -9,7 +9,7 @@ jobs:
       matrix:
         tinygo: ['0.25.0']
         go: ['1.18', '1.19']
-    name: TinyGo ${{ matrix.tinygo }}
+    name: TinyGo ${{ matrix.tinygo }} + Go ${{ matrix.go }}
     steps:
       - uses: actions/checkout@v2
       - uses: acifani/setup-tinygo@v1

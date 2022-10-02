@@ -87,6 +87,8 @@ tinygo.org/x/drivers v0.19.0/go.mod h1:uJD/l1qWzxzLx+vcxaW0eY464N5RAgFi1zTVzASFd
 tinygo.org/x/drivers v0.20.0/go.mod h1:uJD/l1qWzxzLx+vcxaW0eY464N5RAgFi1zTVzASFdqI=
 tinygo.org/x/drivers v0.21.0/go.mod h1:uJD/l1qWzxzLx+vcxaW0eY464N5RAgFi1zTVzASFdqI=
 tinygo.org/x/drivers v0.21.1-0.20220805190104-749b2f672674/go.mod h1:J4+51Li1kcfL5F93kmnDWEEzQF3bLGz0Am3Q7E2a8/E=
+tinygo.org/x/drivers v0.22.0 h1:s5c0hJY8pJYojSGS5AQgauwhTuH2bBZPDqdwkBDGW+o=
+tinygo.org/x/drivers v0.22.0/go.mod h1:J4+51Li1kcfL5F93kmnDWEEzQF3bLGz0Am3Q7E2a8/E=
 tinygo.org/x/drivers v0.22.1-0.20220923030157-23e18424faf5/go.mod h1:J4+51Li1kcfL5F93kmnDWEEzQF3bLGz0Am3Q7E2a8/E=
 tinygo.org/x/drivers v0.23.0 h1:fUy4OmLOWWYCOzDp/83Qewej1Q+YgUpwkm11e7gxUc0=
 tinygo.org/x/drivers v0.23.0/go.mod h1:J4+51Li1kcfL5F93kmnDWEEzQF3bLGz0Am3Q7E2a8/E=

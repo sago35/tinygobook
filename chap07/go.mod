@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/eclipse/paho.mqtt.golang v1.4.1
 	github.com/sago35/tinygo-examples v0.0.0-20220807132125-bd0a0fb59f8a
-	tinygo.org/x/drivers v0.23.0
+	tinygo.org/x/drivers v0.22.0
 )
 
 require (
