@@ -1,0 +1,23 @@
+name: ci
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        tinygo: ['0.25.0']
+        go: ['1.18', '1.19']
+    name: TinyGo ${{ matrix.tinygo }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: acifani/setup-tinygo@v1
+        with:
+          tinygo-version: ${{ matrix.tinygo }}
+      - uses: actions/setup-go@v2
+        with:
+          go-version: ${{ matrix.go }}
+      - name: smoketest
+        run: |
+          make smoketest
