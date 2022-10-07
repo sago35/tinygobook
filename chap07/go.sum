@@ -26,8 +26,6 @@ github.com/paypal/gatt v0.0.0-20151011220935-4ae819d591cf/go.mod h1:+AwQL2mK3Pd3
 github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/sago35/go-bdf v0.0.0-20200313142241-6c17821c91c4/go.mod h1:rOebXGuMLsXhZAC6mF/TjxONsm45498ZyzVhel++6KM=
-github.com/sago35/tinygo-examples v0.0.0-20220807132125-bd0a0fb59f8a h1:JNK10FWSvSQWM7QPzzLCNOQuDaljRpJctt+RsPOGaZM=
-github.com/sago35/tinygo-examples v0.0.0-20220807132125-bd0a0fb59f8a/go.mod h1:FtT4Ct4FKREemnQxW9tZMaDKQyGLxgUxTToowpTFlZg=
 github.com/sago35/tinygo-examples v0.1.0 h1:3rn4G3H1POB+vkhDobOkbv1D6xx+YvnBQySg0gETl7o=
 github.com/sago35/tinygo-examples v0.1.0/go.mod h1:TSQ8x1lVULw/RXyyjvheWSUwu5F/zEpLq1Q7f+HWRZ0=
 github.com/sirupsen/logrus v1.5.0/go.mod h1:+F7Ogzej0PZc/94MaYx/nvG9jOFMD2osvC3s+Squfpo=
@@ -86,9 +84,6 @@ tinygo.org/x/drivers v0.16.0/go.mod h1:uT2svMq3EpBZpKkGO+NQHjxjGf1f42ra4OnMMwQL2
 tinygo.org/x/drivers v0.19.0/go.mod h1:uJD/l1qWzxzLx+vcxaW0eY464N5RAgFi1zTVzASFdqI=
 tinygo.org/x/drivers v0.20.0/go.mod h1:uJD/l1qWzxzLx+vcxaW0eY464N5RAgFi1zTVzASFdqI=
 tinygo.org/x/drivers v0.21.0/go.mod h1:uJD/l1qWzxzLx+vcxaW0eY464N5RAgFi1zTVzASFdqI=
-tinygo.org/x/drivers v0.21.1-0.20220805190104-749b2f672674/go.mod h1:J4+51Li1kcfL5F93kmnDWEEzQF3bLGz0Am3Q7E2a8/E=
-tinygo.org/x/drivers v0.22.0 h1:s5c0hJY8pJYojSGS5AQgauwhTuH2bBZPDqdwkBDGW+o=
-tinygo.org/x/drivers v0.22.0/go.mod h1:J4+51Li1kcfL5F93kmnDWEEzQF3bLGz0Am3Q7E2a8/E=
 tinygo.org/x/drivers v0.22.1-0.20220923030157-23e18424faf5/go.mod h1:J4+51Li1kcfL5F93kmnDWEEzQF3bLGz0Am3Q7E2a8/E=
 tinygo.org/x/drivers v0.23.0 h1:fUy4OmLOWWYCOzDp/83Qewej1Q+YgUpwkm11e7gxUc0=
 tinygo.org/x/drivers v0.23.0/go.mod h1:J4+51Li1kcfL5F93kmnDWEEzQF3bLGz0Am3Q7E2a8/E=
