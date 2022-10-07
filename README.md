@@ -11,12 +11,17 @@ Twitter の hashtag は `#tinygo` と `#tinygobook` を使ってください。
 
 ## よくある質問と回答
 
+### tinygo flash に失敗します
+
+(リセット x 2 で) ブートローダーに入れてから `tinygo flash` してみてください。  
+それでも改善しない場合は、 `tinygo build -o out.uf2` のようにして uf2 ファイルを作ってから手動で書き込みしてください。  
+
 ## 正誤表
 
 ## Demos
 
 デモアプリケーションはこちら。  
-Wio Terminal + TinyGo 0.25 で動作を確認しています。  
+Wio Terminal + TinyGo 0.26 で動作を確認しています。  
 
 ### Wio Terminal Tracker
 
