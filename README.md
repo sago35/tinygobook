@@ -1,7 +1,7 @@
 # tinygobook
 
-高砂正哲が執筆した「基礎から学ぶ組込TinyGo」 (C&R研究所) のサポートサイトです。  
-質問や誤記などがある場合は本ページの Issue もしくは Twitter で受け付けています。  
+高砂正哲が執筆した「基礎から学ぶ組込TinyGo」 (C&R研究所) のサポートサイトです。
+質問や誤記などがある場合は本ページの Issue もしくは Twitter で受け付けています。
 
 ## Twitter
 
@@ -13,8 +13,8 @@ Twitter の hashtag は `#tinygo` と `#tinygobook` を使ってください。
 
 ### tinygo flash に失敗します
 
-(リセット x 2 で) ブートローダーに入れてから `tinygo flash` してみてください。  
-それでも改善しない場合は、 `tinygo build -o out.uf2` のようにして uf2 ファイルを作ってから手動で書き込みしてください。  
+(リセット x 2 で) ブートローダーに入れてから `tinygo flash` してみてください。
+それでも改善しない場合は、 `tinygo build -o out.uf2` のようにして uf2 ファイルを作ってから手動で書き込みしてください。
 
 ## 正誤表
 
