@@ -1,7 +1,9 @@
 # tinygobook
 
-高砂正哲が執筆した「基礎から学ぶ組込TinyGo」 (C&R研究所) のサポートサイトです。
+高砂正哲が執筆した「基礎から学ぶ TinyGoの組込み開発」 (C&R研究所) のサポートサイトです。
 質問や誤記などがある場合は本ページの Issue もしくは Twitter で受け付けています。
+
+* Amazon : https://www.amazon.co.jp/dp/4863544006
 
 ## Twitter
 
