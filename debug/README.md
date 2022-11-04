@@ -1,5 +1,7 @@
 # Debug
 
+[基礎から学ぶ 組込みRust](https://github.com/tomoyuki-nakabayashi/Embedded-Rust-from-Basics/tree/main/debug) でデバッガーを作っている場合、同じものを TinyGo で使うことができます。
+また同様に CMSIS-DAP でデバッグする環境を持っている場合は、そのまま TinyGo (tinygo gdb) でデバッグすることができます。
 
 ## XIAO RP2040 を CMSIS-DAP Debugger にする
 
