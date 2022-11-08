@@ -3,11 +3,17 @@
 高砂正哲が執筆した「基礎から学ぶ TinyGoの組込み開発」 (C&R研究所) のサポートサイトです。
 質問や誤記などがある場合は本ページの Issue もしくは Twitter で受け付けています。
 
+## 書籍情報
+
 * C&R (紙) : https://www.c-r.com/book/detail/1477
 * Amazon (紙、Kindle) : https://www.amazon.co.jp/dp/4863544006
-* 本の森 (紙、PDF、EPUB) : https://book.mynavi.jp/manatee/c-r/ (URL 未定)
+* 本の森 (紙、PDF、EPUB) : https://book.mynavi.jp/manatee/c-r/books/detail/id=134168
 
 ![](./img/tinygobook.png)
+
+各節まで含めた目次はこちら。
+
+* [目次](./toc.md)
 
 ## Twitter
 
