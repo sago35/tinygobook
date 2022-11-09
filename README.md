@@ -90,3 +90,7 @@ $ tinygo flash --target wioterminal --size short --opt 2 ./wioterminal/fukuwarai
 * 高砂正哲
     * GitHub: https://github.com/sago35
     * Twitter: [@sago35tk](https://twitter.com/sago35tk)
+
+## about Gopher
+
+The Gopher character is based on the Go mascot designed by [Renée French](https://reneefrench.blogspot.com/).
