@@ -70,6 +70,23 @@ $ tinygo flash --target wioterminal --size short --opt 2 ./wioterminal/fukuwarai
 
 注意) 実行速度を高速化するため `-opt 2` でビルドすることを推奨します  
 
+## Chapter 7 ネットワークに接続する
+
+サポートサイトにて、 chap07 のコードを公開しています。
+以下のようにして chap07 ディレクトリに移動してから書き込むことができます。
+ssid や password が必要となるコードについては P.235 を参考に設定してください。
+
+```
+$ cd chap07/
+
+$ tinygo flash --target wioterminal --size short --monitor ./update_test/
+   code    data     bss |   flash     ram
+  57452    1528    9004 |   58980   10532
+Connected to COM5. Press Ctrl-C to exit.
+RTL8270DN Firmware Version: 2.1.2
+```
+
+
 ### 各種リンク
 
 * https://tinygo.org/
