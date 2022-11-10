@@ -75,6 +75,8 @@ $ tinygo flash --target wioterminal --size short --opt 2 ./wioterminal/fukuwarai
 サポートサイトにて、 chap07 のコードを公開しています。
 以下のようにして chap07 ディレクトリに移動してから書き込むことができます。
 ssid や password が必要となるコードについては P.235 を参考に設定してください。
+TinyGo 0.26 以降は `tinygo flash` 時に `--monitor` を指定することが出来ます。
+多くの場合、 minicom や Tera Term を使わなくてもうまくやり取りできるはずです。
 
 ```
 $ cd chap07/
