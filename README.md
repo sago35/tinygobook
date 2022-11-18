@@ -32,6 +32,27 @@ Twitter に投稿する時の hashtag は `#tinygo` と `#tinygobook` を使っ�
 
 誤記等を見つけた場合は、 Issue もしくは Twitter で教えてください。
 
+
+* [正誤表](./correct.md)
+
+### 注意
+
+ネットワーク部 (RTL8720DN) のファームウェアアップデート方法の修正があるため必ず確認してください。
+具体的には、
+
+```
+$ git clone https://github.com/Seeed-Studio/ambd_flash_tool
+```
+
+ではなく
+
+```
+$ git clone https://github.com/Seeed-Studio/ambd_flash_tool --branch JP
+```
+
+を使うようにしてください。
+
+
 ## Demos
 
 デモアプリケーションはこちら。
