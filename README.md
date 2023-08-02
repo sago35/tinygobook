@@ -52,6 +52,19 @@ $ git clone https://github.com/Seeed-Studio/ambd_flash_tool --branch JP
 
 を使うようにしてください。
 
+### TinyGo と Go の組み合わせ
+
+| TinyGo | Go | 備考 |
+| --- | --- | --- |
+| 0.28.1 | 1.19 - 1.20 | Wio Terminal の動作について一部問題あり(※1) |
+| 0.27.0 | 1.19 - 1.20 | |
+| 0.26.0 | 1.18 - 1.19 | 書籍執筆時 Version (脱稿直前のリリース) |
+| 0.25.0 | 1.18 - 1.19 | 書籍執筆時 Version |
+
+※1  
+TinyGo 0.28.1 で Wio Terminal に搭載されている ATSAMD51 マイコンの Cache を有効化する変更が入り、 I2C などが一部動作不良となるケースがあります。
+本件については [正誤表](./correct.md) に記載しています。
+
 
 ## Demos
 
