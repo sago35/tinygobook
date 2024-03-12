@@ -21,6 +21,9 @@
 - Chapter 5
   - (TinyGo 0.28.1 以降) P.185, P.189 のソースコード内で `"machine/usb/midi"` を import している箇所で import エラーになる
     - package path を `"machine/usb/adc/midi"` に書き換えてください
+- Chapter 7
+  - (TinyGo 0.31.0 以降) 全体的な使い方が変更となったため基本的には以下のコードを参照してください
+    - https://github.com/tinygo-org/drivers/tree/v0.27.0/examples/net
 
 ## その他雑多な情報
 
