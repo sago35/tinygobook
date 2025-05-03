@@ -28,6 +28,31 @@ Twitter に投稿する時の hashtag は `#tinygo` と `#tinygobook` を使っ�
 2 章 P.31 に従い (リセット x 2 で) ブートローダーに入れてから `tinygo flash` してみてください。
 それでも改善しない場合は、 `tinygo build -o out.uf2` のようにして uf2 ファイルを作ってから手動で書き込みしてください。
 
+### macOS 15 Sequoia で TinyGo Flash 出来ない場合
+
+$TINYGOROOT/targets/wioterminal.json を以下のように変更して保存してください。
+変更点は `msd-volume-name` に `NO NAME` を追加した部分のみです。
+
+```
+{
+    "inherits": ["atsamd51p19a"],
+    "build-tags": ["wioterminal"],
+    "serial": "usb",
+    "serial-port": ["2886:802d"],
+    "flash-1200-bps-reset": "true",
+    "flash-method": "msd",
+    "msd-volume-name": ["Arduino", "NO NAME"],
+    "msd-firmware-name": "firmware.uf2",
+    "openocd-verify": true
+}
+```
+
+$TINYGOROOT は以下で表示できます。
+
+```
+$ tinygo env TINYGOROOT
+```
+
 ## 正誤表
 
 誤記等を見つけた場合は、 Issue もしくは Twitter で教えてください。
