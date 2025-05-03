@@ -21,12 +21,17 @@
 - Chapter 5
   - (TinyGo 0.28.1 以降) P.185, P.189 のソースコード内で `"machine/usb/midi"` を import している箇所で import エラーになる
     - package path を `"machine/usb/adc/midi"` に書き換えてください
+  - (TinyGO 0.34.0 以降) P.185, P.189 のソースコード内 m.NoteOn() および m.NoteOff() の引数 channel は 1 に書き換えてください
+    - 例) m.NoteOn(0, 1, midi.C4, 0x7F)
+    - 例) m.NoteOff(0, 1, midi.C4, 0x7F)
 - Chapter 7
   - (TinyGo 0.31.0 以降) 全体的な使い方が変更となったため基本的には以下のコードを参照してください
     - https://github.com/tinygo-org/drivers/tree/v0.27.0/examples/net
 
 ## その他雑多な情報
 
+- TinyGo 0.37.0 での動作チェック結果
+  - USB MIDI の m.NoteOn() などで使用する channnel number は 0 ではなく 1 で設定してください
 - TinyGo 0.29.0 での動作チェック結果
   - [Isssues #9](https://github.com/sago35/tinygobook/issues/9) に詳細情報あり
     - USB MIDI の package path は machine/usb/adc/midi に変更となりました
